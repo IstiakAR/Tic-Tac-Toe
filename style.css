@@ -1,0 +1,171 @@
+*{
+    /* border: 1px solid red; */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+#board{
+    margin-top: 20px;
+    height: auto;
+}
+
+[id^="line"] {
+    display: flex;
+    flex-direction: row;
+}
+
+[id^="square"] {
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#reset {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    min-height: 60px;
+    min-width: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#reset:hover,
+#reset:active {
+    background-color: initial;
+    color: #FF4742;
+}
+
+#reset:active {
+    opacity: .5;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#scoreboard-container {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    flex: 1;
+}
+
+.player-symbol {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.player-label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #333;
+}
+
+.vs-container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.vs {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #777;
+}
+
+#turn-indicator {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+#current-player {
+    font-weight: 700;
+    color: #FF4742;
+}
+
+#player1 .player-symbol {
+    color: #3498db;
+}
+
+#player2 .player-symbol {
+    color: #e74c3c;
+}
+
+.active-player {
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 8px;
+}
+
+#player1,#player2{
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#score1,#score2{
+    font-size: 30px;
+    font-weight: 800;
+}
